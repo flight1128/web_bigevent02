@@ -54,7 +54,7 @@ $(function () {
                 }
                 layer.msg('登录成功 即将跳转')
                 // 保存token
-                localStorage.getItem("token", res.token)
+                localStorage.setItem("token", res.token)
                 // 跳转
                 location.href = "/index.html"
             }
